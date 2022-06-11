@@ -1,3 +1,5 @@
-export default function Header() {
-  // TODO
-}
+const Header: React.FC = () => <p>kk</p>;
+
+export { Header };
+
+export default Header;

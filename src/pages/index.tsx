@@ -24,13 +24,19 @@ interface HomeProps {
   postsPagination: PostPagination;
 }
 
-// export default function Home() {
-//   // TODO
-// }
+const Home: React.FC<HomeProps> = ({ postsPagination }) => {
+  return <p>kk eae man</p>;
+};
 
-// export const getStaticProps = async () => {
-//   // const prismic = getPrismicClient({});
-//   // const postsResponse = await prismic.getByType(TODO);
+export default Home;
 
-//   // TODO
-// };
+export const getStaticProps: GetStaticProps = async () => {
+  const prismic = getPrismicClient({});
+  const postsResponse = await prismic.getByType('posts', { pageSize: 1 });
+
+  return {
+    props: {
+      postsPagination: postsResponse,
+    },
+  };
+};
