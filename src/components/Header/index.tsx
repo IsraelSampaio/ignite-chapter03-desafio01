@@ -3,8 +3,9 @@ import Link from 'next/link';
 
 import classNames from 'classnames/bind';
 import styles from './header.module.scss';
+import commonStyles from '../../styles/common.module.scss';
 
-const cx = classNames.bind(styles);
+const cx = classNames.bind([styles, commonStyles]);
 
 export const Header: React.FC = () => (
   <header className={cx('container', 'header')}>
