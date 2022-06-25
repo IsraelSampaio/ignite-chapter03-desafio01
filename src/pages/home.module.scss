@@ -1,1 +1,50 @@
-// TODO
+.posts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.post {
+    margin-bottom: 3rem;
+
+    &__title {
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: var(--color-heading);
+    }
+
+    &__subtitle {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+        color: var(--color-body);
+    }
+
+    &__wrapper {
+        display: flex;
+        font-size: 0.875rem;
+        color: var(--color-info);
+
+        svg {
+            margin-right: 0.5rem;
+        }
+
+        p {
+            margin-right: 1.5rem;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.load-more {
+    background: transparent;
+    border: none;
+    outline: var(--color-highlight);
+    color: var(--color-highlight);
+    font-weight: 600;
+    font-size: 1.125rem;
+
+    &:hover {
+        border-bottom: 1px solid var(--color-highlight);
+    }
+}

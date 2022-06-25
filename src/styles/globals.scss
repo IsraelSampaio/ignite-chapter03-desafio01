@@ -4,14 +4,45 @@
   padding: 0;
 }
 
-body {
-  background-color: var(--color-background);
-}
-
 :root {
   --color-background: #1a1d23;
   --color-highlight: #ff57b2;
   --color-heading: #f8f8f8;
   --color-info: #bbbbbb;
   --color-body: #d7d7d7;
+}
+
+body {
+  background-color: var(--color-background);
+
+  font-family: Inter, sans-serif;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
