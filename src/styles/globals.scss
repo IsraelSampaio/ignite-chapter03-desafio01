@@ -4,4 +4,19 @@
   padding: 0;
 }
 
-// TODO
+body {
+  background-color: var(--color-background);
+}
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+:root {
+  --color-background: #1a1d23;
+  --color-highlight: #ff57b2;
+  --color-heading: #f8f8f8;
+  --color-info: #bbbbbb;
+  --color-body: #d7d7d7;
+}
